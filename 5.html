@@ -3,6 +3,34 @@
 <head>
   <title>트랙(Tracks)</title>
   <meta charset="utf-8">
+  <style>
+    h1{
+      font-size: 45px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      padding: 20px;
+      margin: 0;
+    }
+    h2{
+      color: blue;
+      text-align: center;
+      padding: 20px;
+      font-size: 35px;
+      text-align: center;
+    }
+    .tracks{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    p{
+      text-align: center;
+    }
+    @media(max-width:500px){
+      .tracks{
+        display: block;
+      }
+    }
+  </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZY49CQ715"></script>
   <script>
@@ -15,51 +43,59 @@
 </head>
 <body>
   <h1>트랙(Tracks)</h1><br>
-  <h2><u>영국(UK)</u></h2>
-  <ul>
-    <li><strong>INTERSECTOR</strong></li><p><img src="UK1.png" width="30%"></p>
-    <li><strong>THE LOOPBACK</strong></li><p><img src="UK2.png" width="30%"></p>
-  </ul><br>
-  <h2><u>프랑스(France)</u></h2>
-  <ul>
-    <li><strong>CRAZY STRAIGHTS</strong></li><p><img src="France1.png" width="30%"></p>
-    <li><strong>CURBED HEIGHTS</strong></li><p><img src="France2.png" width="30%"></p>
-    <li><strong>THE CHRONOZONE</strong></li><p><img src="France3.png" width="30%"></p>
-  </ul><br>
-  <h2><u>이탈리아(Italy)</u></h2>
-  <ul>
-    <li><strong>WATERFRONT DASH</strong></li><P><img src="Italy1.png" width="30%"></p>
-    <li><strong>FLYING FINISH</strong></li><P><img src="Italy2.png" width="30%"></p>
-  </ul><br>
-  <h2><u>독일(Germany)</u></h2>
-  <ul>
-    <li><strong>HIGH ROLLER</strong></li><p><img src="Germany1.png" width="30%"></p>
-    <li><strong>SNAKESTORM</strong></li><p><img src="Germany2.png" width="30%"></p>
-    <li><strong>TWINLOOP CIRCUIT</strong></li><p><img src="Germany3.png" width="30%"></p>
-  </ul><br>
-  <h2><u>스페인(Spain)</u></h2>
-  <ul>
-    <li><strong>SECRET SIX</strong></li><p><img src="Spain1.png" width="30%"></p>
-    <li><strong>RISE'N'FALL</strong></li><p><img src="Spain2.png" width="30%"></p>
-    <li><strong>SUNKEN SIGHTS</strong></li><p><img src="Spain3.png" width="30%"></p>
-    <li><strong>THE SANDWINDER</strong></li><p><img src="Spain4.png" width="30%"></p>
-    <li><strong>FREEFALL FREEWAY</strong></li><p><img src="Spain5.png" width="30%"></p>
-    <li><strong>ROUGHDUST FLATS</strong></li><p><img src="Spain6.png" width="30%"></p>
-    <li><strong>WIDE WALL CHASE</strong></li><p><img src="Spain7.png" width="30%"></p>
-  </ul><br>
-  <h2><u>일본(Japan)</u></h2>
-  <ul>
-    <li><strong>DUST BUSTER</strong></li><p><img src="Japan1.png" width="30%"></p>
-    <li><strong>TUBULAR HELL</strong></li><p><img src="Japan2.png" width="30%"></p>
-    <li><strong>HIGHFLY CLEARWAY</strong></li><p><img src="Japan3.png" width="30%"></p>
-    <li><strong>BANK JOB</strong></li><p><img src="Japan4.png" width="30%"></p>
-  </ul><br>
-  <h2><u>미국(USA)</u></h2>
-  <ul>
-    <li><strong>HELIPAD HEIGHTS</strong></li><p><img src="USA1.png" width="30%"></p>
-    <li><strong>CURB CITY CIRCUIT</strong></li><p><img src="USA2.png" width="30%"></p>
-    <li><strong>SKYTOP SPEED CIRCUIT</strong></li><p><img src="USA3.png" width="30%"></p>
-  </ul><br>
+<div class="tracks">
+  <div>
+  <h2>영국(UK)</h2>
+      <p><strong>INTERSECTOR</strong></p><p><img src="UK1.png" width="80%"></p>
+      <p><strong>THE LOOPBACK</strong></p><p><img src="UK2.png" width="80%"></p>
+  </div>
+  <div>
+    <h2>프랑스(France)</h2>
+      <p><strong>CRAZY STRAIGHTS</strong></p><p><img src="France1.png" width="80%"></p>
+      <p><strong>CURBED HEIGHTS</strong></p><p><img src="France2.png" width="80%"></p>
+      <p><strong>THE CHRONOZONE</strong></p><p><img src="France3.png" width="80%"></p>
+  </div>
+  <div>
+    <h2>이탈리아(Italy)</h2>
+      <p><strong>WATERFRONT DASH</strong></p><P><img src="Italy1.png" width="80%"></p>
+      <p><strong>FLYING FINISH</strong></p><P><img src="Italy2.png" width="80%"></p>
+  </div>
+  <div>
+    <h2>독일(Germany)</h2>
+      <p><strong>HIGH ROLLER</strong></p><p><img src="Germany1.png" width="80%"></p>
+      <p><strong>SNAKESTORM</strong></p><p><img src="Germany2.png" width="80%"></p>
+      <p><strong>TWINLOOP CIRCUIT</strong></p><p><img src="Germany3.png" width="80%"></p>
+  </div>
+</div>
+  <h2>스페인(Spain)</h2>
+<div class="tracks">
+  <div>
+    <p><strong>SECRET SIX</strong></p><p><img src="Spain1.png" width="80%"></p>
+    <p><strong>RISE'N'FALL</strong></p><p><img src="Spain2.png" width="80%"></p>
+    <p><strong>SUNKEN SIGHTS</strong></p><p><img src="Spain3.png" width="80%"></p>
+    <p><strong>THE SANDWINDER</strong></p><p><img src="Spain4.png" width="80%"></p>
+  </div>
+  <div>
+    <p><strong>FREEFALL FREEWAY</strong></p><p><img src="Spain5.png" width="80%"></p>
+    <p><strong>ROUGHDUST FLATS</strong></p><p><img src="Spain6.png" width="80%"></p>
+    <p><strong>WIDE WALL CHASE</strong></p><p><img src="Spain7.png" width="80%"></p>
+  </div>
+</div>
+<div class="tracks">
+  <div>
+    <h2>일본(Japan)</h2>
+      <p><strong>DUST BUSTER</strong></p><p><img src="Japan1.png" width="80%"></p>
+      <p><strong>TUBULAR HELL</strong></p><p><img src="Japan2.png" width="80%"></p>
+      <p><strong>HIGHFLY CLEARWAY</strong></p><p><img src="Japan3.png" width="80%"></p>
+      <p><strong>BANK JOB</strong></p><p><img src="Japan4.png" width="80%"></p>
+  </div>
+  <div>
+    <h2>미국(USA)</h2>
+      <p><strong>HELIPAD HEIGHTS</strong></p><p><img src="USA1.png" width="80%"></p>
+      <p><strong>CURB CITY CIRCUIT</strong></p><p><img src="USA2.png" width="80%"></p>
+      <p><strong>SKYTOP SPEED CIRCUIT</strong></p><p><img src="USA3.png" width="80%"></p>
+  </div>
+</div>
   <p><div id="lv-container" data-id="city" data-uid="MTAyMC81NTI3My8zMTc0MA==">
 	<script type="text/javascript">
    (function(d, s) {

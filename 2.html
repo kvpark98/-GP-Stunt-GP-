@@ -3,6 +3,34 @@
 <head>
   <title>차량(Cars)</title>
   <meta charset="utf-8">
+  <style>
+    h1{
+      font-size: 45px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      padding: 20px;
+      margin: 0;
+    }
+    h2{
+      color: blue;
+      font-size: 35px;
+      padding: 10px;
+      text-align: center;
+    }
+    .cars{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    p{
+      text-align: center;
+    }
+      @media(max-width:500px){
+        .cars{
+          display: block;
+          }
+          }
+      }
+  </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZY49CQ715"></script>
 <script>
@@ -15,42 +43,58 @@
 </head>
 <body>
   <h1>차량(Cars)</h1><br>
-  <h2><u>Wild Wheels</u></h2>
+  <h2>Wild Wheels</h2>
   <p>전체적인 능력치가 <strong>그립(Grip)</strong>에 집중된 차량군. 오프로드(Off Road) 트랙에서 진가를 발휘한다.</p>
-  <ul>
-    <li><strong>Dune Rat</strong></li><p><img src="1.jpg" width="20%"></p>
-    <li><strong>The Brute</strong></li><p><img src="2.jpg" width="20%"></p>
-    <li><strong>Sand Shark</strong></li><p><img src="3.jpeg" width="20%"></p>
-    <li><strong>The Hustler</strong></li><p><img src="4.jpg" width="20%"></p>
-    <li><strong>Road Hog</strong></li><p><img src="5.jpeg" width="20%"></p>
-    <li><strong>Raging Bull</strong></li><p><img src="6.jpeg" width="20%"></p>
-  </ul>
-  <h2><u>Aero Blasters</u></h2>
+  <div class="cars">
+    <div>
+      <p><strong>Dune Rat</strong></p><p><img src="1.jpg" width="60%"></p>
+      <p><strong>The Brute</strong></p><p><img src="2.jpg" width="60%"></p>
+      <p><strong>Sand Shark</strong></p><p><img src="3.jpeg" width="60%"></p>
+    </div>
+    <div>
+        <p><strong>The Hustler</strong></p><p><img src="4.jpg" width="60%"></p>
+        <p><strong>Road Hog</strong></p><p><img src="5.jpeg" width="60%"></p>
+        <p><strong>Raging Bull</strong></p><p><img src="6.jpeg" width="60%"></p>
+    </div>
+  </div>
+  <h2>Aero Blasters</h2>
   <p>전체적인 능력치가 <strong>스턴트(Stunt)</strong>에 집중된 차량군. 스턴트 회전 속도가 빨라 높은 점수를 받기에 유리하다.</p>
-  <ul>
-    <li><strong>Twin Eagle</strong></li><p><img src="7.jpg" width="20%"></p>
-    <li><strong>Sky Hawk</strong></li><p><img src="8.jpg" width="20%"></p>
-    <li><strong>Stunt Monkey</strong></li><p><img src="9.jpeg" width="20%"></p>
-    <li><strong>Flying Mantis</strong></li><p><img src="10.jpeg" width="20%"></p>
-    <li><strong>Wild Dart</strong></li><p><img src="11.jpeg" width="20%"></p>
-  </ul>
-  <h2><u>Speed Demons</u></h2>
+  <div class="cars">
+   <div>
+      <p><strong>Twin Eagle</strong></p><p><img src="7.jpg" width="60%"></p>
+      <p><strong>Sky Hawk</strong></p><p><img src="8.jpg" width="60%"></p>
+      <p><strong>Stunt Monkey</strong></p><p><img src="9.jpeg" width="60%"></p>
+   </div>
+   <div>
+      <p><strong>Flying Mantis</strong></p><p><img src="10.jpeg" width="60%"></p>
+      <p><strong>Wild Dart</strong></p><p><img src="11.jpeg" width="60%"></p>
+   </div>
+  </div>
+  <h2>Speed Demons</h2>
   <p>전체적인 능력치가 <strong>파워(Power)</strong>에 집중된 차량군. 스턴트 능력은 상대적으로 떨어지지만 고속 주행과 코너링에 강하다. (예외적으로 Speed Demons의 끝판왕인 Inferno는 미친 듯한 속도와 스턴트를 자랑하는 괴물이다.)</p>
-  <ul>
-    <li><strong>Mean Streak</strong></li><p><img src="12.jpeg" width="20%"></p>
-    <li><strong>Alley Kat</strong></li><p><img src="13.jpeg" width="20%"></p>
-    <li><strong>Nitro Lightnin'</strong></li><p><img src="14.jpeg" width="20%"></p>
-    <li><strong>The Phantom</strong></li><p><img src="15.jpeg" width="20%"></p>
-    <li><strong>Inferno</strong></li><p><img src="16.jpg" width="20%"></p>
-  </ul>
-  <h2><u>Team Specials</u></h2>
+  <div class="cars">
+   <div>
+      <p><strong>Mean Streak</strong></p><p><img src="12.jpeg" width="60%"></p>
+      <p><strong>Alley Kat</strong></p><p><img src="13.jpeg" width="60%"></p>
+      <p><strong>Nitro Lightnin'</strong></p><p><img src="14.jpeg" width="60%"></p>
+   </div>
+   <div>
+      <p><strong>The Phantom</strong></p><p><img src="15.jpeg" width="60%"></p>
+      <p><strong>Inferno</strong></p><p><img src="16.jpg" width="60%"></p>
+   </div>
+  </div>
+  <h2>Team Specials</h2>
   <p><strong>스턴트 GP계의 끝판왕</strong>. 모든 능력치가 평균 이상이며 배터리 성능도 매우 우수하다. 밸런스 유지를 위해 아케이드 모드에서는 사용이 불가능하고, 챔피언십 모드에서도 사용이 일부 제한된다.</p>
-  <ul>
-    <li><strong>The Forkster</strong></li><p><img src="17.jpg" width="20%"></p>
-    <li><strong>Worms Mobile</strong></li><p><img src="18.jpeg" width="20%"></p>
-    <li><strong>Formula 17</strong></li><p><img src="19.jpeg" width="20%"></p>
-    <li><strong>Team Machine</strong></li><p><img src="20.jpeg" width="20%"></p>
-  </ul>
+  <div class="cars">
+   <div>
+      <p><strong>The Forkster</strong></p><p><img src="17.jpg" width="60%"></p>
+      <p><strong>Worms Mobile</strong></p><p><img src="18.jpeg" width="60%"></p>
+   </div>
+   <div>
+      <p><strong>Formula 17</strong></p><p><img src="19.jpeg" width="60%"></p>
+      <p><strong>Team Machine</strong></p><p><img src="20.jpeg" width="60%"></p>
+   </div>
+  </div>
   <p><div id="lv-container" data-id="city" data-uid="MTAyMC81NTI3My8zMTc0MA==">
 	<script type="text/javascript">
    (function(d, s) {

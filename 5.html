@@ -5,28 +5,28 @@
   <meta charset="utf-8">
   <style>
     h1{
-      font-size: 45px;
+      font-size: 50px;
       text-align: center;
-      border-bottom: 1px solid gray;
+      border-bottom:1px solid gray;
       padding: 20px;
       margin: 0;
     }
     h2{
-      color: blue;
-      text-align: center;
-      padding: 20px;
       font-size: 35px;
       text-align: center;
-    }
-    .tracks{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      padding: 20px;
+      margin: 0;
+      color: red;
     }
     p{
       text-align: center;
     }
-    @media(max-width:500px){
-      .tracks{
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media(max-width:800px){
+      .grid{
         display: block;
       }
     }
@@ -43,7 +43,7 @@
 </head>
 <body>
   <h1>트랙(Tracks)</h1><br>
-<div class="tracks">
+<div class="grid">
   <div>
   <h2>영국(UK)</h2>
       <p><strong>INTERSECTOR</strong></p><p><img src="UK1.png" width="80%"></p>
@@ -68,7 +68,7 @@
   </div>
 </div>
   <h2>스페인(Spain)</h2>
-<div class="tracks">
+<div class="grid">
   <div>
     <p><strong>SECRET SIX</strong></p><p><img src="Spain1.png" width="80%"></p>
     <p><strong>RISE'N'FALL</strong></p><p><img src="Spain2.png" width="80%"></p>
@@ -81,7 +81,7 @@
     <p><strong>WIDE WALL CHASE</strong></p><p><img src="Spain7.png" width="80%"></p>
   </div>
 </div>
-<div class="tracks">
+<div class="grid">
   <div>
     <h2>일본(Japan)</h2>
       <p><strong>DUST BUSTER</strong></p><p><img src="Japan1.png" width="80%"></p>

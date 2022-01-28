@@ -5,29 +5,29 @@
   <meta charset="utf-8">
   <style>
     h1{
-      font-size: 45px;
+      font-size: 50px;
       text-align: center;
-      border-bottom: 1px solid gray;
+      border-bottom:1px solid gray;
       padding: 20px;
       margin: 0;
     }
     h2{
-      color: blue;
       font-size: 35px;
-      padding: 10px;
       text-align: center;
-    }
-    .cars{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      padding: 20px;
+      margin: 0;
+      color: red;
     }
     p{
       text-align: center;
     }
-      @media(max-width:500px){
-        .cars{
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+      @media(max-width:800px){
+        .grid{
           display: block;
-          }
           }
       }
   </style>
@@ -45,7 +45,7 @@
   <h1>차량(Cars)</h1><br>
   <h2>Wild Wheels</h2>
   <p>전체적인 능력치가 <strong>그립(Grip)</strong>에 집중된 차량군. 오프로드(Off Road) 트랙에서 진가를 발휘한다.</p>
-  <div class="cars">
+  <div class="grid">
     <div>
       <p><strong>Dune Rat</strong></p><p><img src="1.jpg" width="60%"></p>
       <p><strong>The Brute</strong></p><p><img src="2.jpg" width="60%"></p>
@@ -59,7 +59,7 @@
   </div>
   <h2>Aero Blasters</h2>
   <p>전체적인 능력치가 <strong>스턴트(Stunt)</strong>에 집중된 차량군. 스턴트 회전 속도가 빨라 높은 점수를 받기에 유리하다.</p>
-  <div class="cars">
+  <div class="grid">
    <div>
       <p><strong>Twin Eagle</strong></p><p><img src="7.jpg" width="60%"></p>
       <p><strong>Sky Hawk</strong></p><p><img src="8.jpg" width="60%"></p>
@@ -72,7 +72,7 @@
   </div>
   <h2>Speed Demons</h2>
   <p>전체적인 능력치가 <strong>파워(Power)</strong>에 집중된 차량군. 스턴트 능력은 상대적으로 떨어지지만 고속 주행과 코너링에 강하다. (예외적으로 Speed Demons의 끝판왕인 Inferno는 미친 듯한 속도와 스턴트를 자랑하는 괴물이다.)</p>
-  <div class="cars">
+  <div class="grid">
    <div>
       <p><strong>Mean Streak</strong></p><p><img src="12.jpeg" width="60%"></p>
       <p><strong>Alley Kat</strong></p><p><img src="13.jpeg" width="60%"></p>
@@ -85,7 +85,7 @@
   </div>
   <h2>Team Specials</h2>
   <p><strong>스턴트 GP계의 끝판왕</strong>. 모든 능력치가 평균 이상이며 배터리 성능도 매우 우수하다. 밸런스 유지를 위해 아케이드 모드에서는 사용이 불가능하고, 챔피언십 모드에서도 사용이 일부 제한된다.</p>
-  <div class="cars">
+  <div class="grid">
    <div>
       <p><strong>The Forkster</strong></p><p><img src="17.jpg" width="60%"></p>
       <p><strong>Worms Mobile</strong></p><p><img src="18.jpeg" width="60%"></p>

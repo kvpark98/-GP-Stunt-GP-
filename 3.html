@@ -5,19 +5,33 @@
   <meta charset="utf-8">
   <style>
     h1{
-      font-size: 45px;
+      font-size: 50px;
       text-align: center;
       border-bottom:1px solid gray;
       padding: 20px;
       margin: 0;
     }
     h2{
-      text-align: center;
-      color: blue;
       font-size: 35px;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+      color: red;
     }
     p{
-    text-align: center;
+      text-align: center;
+    }
+    strong{
+      color: blue;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media(max-width:800px){
+      #grid{
+        display: block;
+      }
     }
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -53,8 +67,15 @@
     <p><strong>Side Grind(???점)</strong>: Grind와 비슷하지만, 두 바퀴(왼쪽 또는 오른쪽)가 트랙 밖으로 벗어나 있어야 한다.</p>
     <p><strong>Stream Style(500점)</strong>: 앞차 뒤에 붙어서 3~4초 이상 주행하면 공기 저항을 덜 받아 순간적인 가속력을 얻을 수 있다.</p>
     <p><strong>Wheelie(750점)</strong>: 앞바퀴만 뜨게한 후 다시 땅에 붙이면 된다.</p>
-  <p><strong>*여러 가지 스턴트를 통해 다양한 묘기를 부릴 수 있다.</strong></p>
-  <p><iframe width="40%" height="40%" src="https://www.youtube.com/embed/cCLUw7cFJbk?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <iframe width="40%" height="40%" src="https://www.youtube.com/embed/53V1a5VOtsg?start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+  <p><strong style="color:black">*여러 가지 스턴트를 통해 다양한 묘기를 부릴 수 있다.</strong></p>
+<div id="grid">
+  <div>
+    <p><iframe width="530" height="315" src="https://www.youtube.com/embed/cCLUw7cFJbk?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+  </div>
+  <div>
+    <p><iframe width="530" height="315" src="https://www.youtube.com/embed/53V1a5VOtsg?start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+  </div>
+</div>
   <p><div id="lv-container" data-id="city" data-uid="MTAyMC81NTI3My8zMTc0MA==">
 	<script type="text/javascript">
    (function(d, s) {

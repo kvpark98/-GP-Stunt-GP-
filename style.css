@@ -1,0 +1,29 @@
+  h1{
+    font-size: 50px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    padding: 20px;
+    margin: 0;
+  }
+  h2{
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    color: red;
+  }
+  p{
+    text-align: center;
+  }
+  a{
+    color: black;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media(max-width:800px){
+   .grid{
+      display: block;
+    }
+  }

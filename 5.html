@@ -3,97 +3,87 @@
 <head>
   <title>트랙(Tracks)</title>
   <meta charset="utf-8">
-  <style>
-    h1{
-      font-size: 50px;
-      text-align: center;
-      border-bottom:1px solid gray;
-      padding: 20px;
-      margin: 0;
-    }
-    h2{
-      font-size: 35px;
-      text-align: center;
-      padding: 20px;
-      margin: 0;
-      color: red;
-    }
-    p{
-      text-align: center;
-    }
-    .grid{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-    @media(max-width:800px){
-      .grid{
-        display: block;
-      }
-    }
-  </style>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZY49CQ715"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="colors.js"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-XZY49CQ715');
+    const Track = {
+      Tracks:function(a,b){
+      document.write('<p><strong>'+a+'</strong></p><p><img src="'+b+'" width="80%"></p>');
+    }
+    }
   </script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>트랙(Tracks)</h1><br>
+  <input type="button" value="Night" onclick="NightDayHandler(this);">
 <div class="grid">
   <div>
   <h2>영국(UK)</h2>
-      <p><strong>INTERSECTOR</strong></p><p><img src="UK1.png" width="80%"></p>
-      <p><strong>THE LOOPBACK</strong></p><p><img src="UK2.png" width="80%"></p>
+  <script>
+    Track.Tracks("INTERSECTOR","UK1.png");
+    Track.Tracks("THE LOOPBACK","UK2.png");
+  </script>
   </div>
   <div>
-    <h2>프랑스(France)</h2>
-      <p><strong>CRAZY STRAIGHTS</strong></p><p><img src="France1.png" width="80%"></p>
-      <p><strong>CURBED HEIGHTS</strong></p><p><img src="France2.png" width="80%"></p>
-      <p><strong>THE CHRONOZONE</strong></p><p><img src="France3.png" width="80%"></p>
+  <h2>프랑스(France)</h2>
+  <script>
+    Track.Tracks("CRAZY STRAIGHTS","France1.png");
+    Track.Tracks("CURBED HEIGHTS","France2.png");
+    Track.Tracks("THE CHRONOZONE","France3.png");
+    </script>
   </div>
   <div>
     <h2>이탈리아(Italy)</h2>
-      <p><strong>WATERFRONT DASH</strong></p><P><img src="Italy1.png" width="80%"></p>
-      <p><strong>FLYING FINISH</strong></p><P><img src="Italy2.png" width="80%"></p>
+    <script>
+    Track.Tracks("WATERFRONT DASH","Italy1.png");
+    Track.Tracks("FLYING FINISH","Italy2.png");
+    </script>
   </div>
   <div>
     <h2>독일(Germany)</h2>
-      <p><strong>HIGH ROLLER</strong></p><p><img src="Germany1.png" width="80%"></p>
-      <p><strong>SNAKESTORM</strong></p><p><img src="Germany2.png" width="80%"></p>
-      <p><strong>TWINLOOP CIRCUIT</strong></p><p><img src="Germany3.png" width="80%"></p>
+    <script>
+    Track.Tracks("HIGH ROLLER","Germany1.png");
+    Track.Tracks("SNAKESTORM","Germany2.png");
+    Track.Tracks("TWINLOOP CIRCUIT","Germany3.png");
+    </script>
   </div>
 </div>
   <h2>스페인(Spain)</h2>
 <div class="grid">
   <div>
-    <p><strong>SECRET SIX</strong></p><p><img src="Spain1.png" width="80%"></p>
-    <p><strong>RISE'N'FALL</strong></p><p><img src="Spain2.png" width="80%"></p>
-    <p><strong>SUNKEN SIGHTS</strong></p><p><img src="Spain3.png" width="80%"></p>
-    <p><strong>THE SANDWINDER</strong></p><p><img src="Spain4.png" width="80%"></p>
+    <script>
+    Track.Tracks("SECRET SIX","Spain1.png");
+    Track.Tracks("RISE N FALL","Spain2.png");
+    Track.Tracks("SUNKEN SIGHTS","Spain3.png");
+    Track.Tracks("THE SANDWINDER","Spain4.png");
+    </script>
   </div>
   <div>
-    <p><strong>FREEFALL FREEWAY</strong></p><p><img src="Spain5.png" width="80%"></p>
-    <p><strong>ROUGHDUST FLATS</strong></p><p><img src="Spain6.png" width="80%"></p>
-    <p><strong>WIDE WALL CHASE</strong></p><p><img src="Spain7.png" width="80%"></p>
+    <script>
+    Track.Tracks("FREEFALL FREEWAY","Spain5.png");
+    Track.Tracks("ROUGHDUST FLATS","Spain6.png");
+    Track.Tracks("WIDE WALL CHASE","Spain7.png");
+    </script>
   </div>
 </div>
 <div class="grid">
   <div>
     <h2>일본(Japan)</h2>
-      <p><strong>DUST BUSTER</strong></p><p><img src="Japan1.png" width="80%"></p>
-      <p><strong>TUBULAR HELL</strong></p><p><img src="Japan2.png" width="80%"></p>
-      <p><strong>HIGHFLY CLEARWAY</strong></p><p><img src="Japan3.png" width="80%"></p>
-      <p><strong>BANK JOB</strong></p><p><img src="Japan4.png" width="80%"></p>
+    <script>
+    Track.Tracks("DUST BUSTER","Japan1.png");
+    Track.Tracks("TUBULAR HELL","Japan2.png");
+    Track.Tracks("HIGHFLY CLEARWAY","Japan3.png");
+    Track.Tracks("BANK JOB","Japan4.png");
+    </script>
   </div>
   <div>
     <h2>미국(USA)</h2>
-      <p><strong>HELIPAD HEIGHTS</strong></p><p><img src="USA1.png" width="80%"></p>
-      <p><strong>CURB CITY CIRCUIT</strong></p><p><img src="USA2.png" width="80%"></p>
-      <p><strong>SKYTOP SPEED CIRCUIT</strong></p><p><img src="USA3.png" width="80%"></p>
+    <script>
+    Track.Tracks("HELIPAD HEIGHTS","USA1.png");
+    Track.Tracks("CURB CITY CIRCUIT","USA2.png");
+    Track.Tracks("SKYTOP SPEED CIRCUIT","USA3.png");
+    </script>
   </div>
 </div>
   <p><div id="lv-container" data-id="city" data-uid="MTAyMC81NTI3My8zMTc0MA==">

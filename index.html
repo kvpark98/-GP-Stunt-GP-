@@ -3,134 +3,111 @@
 <head>
   <title>스턴트 GP(Stunt GP)</title>
   <meta charset="utf-8">
-  <style>
-    h1{
-      font-size: 50px;
-      text-align: center;
-      border-bottom:1px solid gray;
-      padding: 20px;
-      margin: 0;
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="colors.js"></script>
+  <script>
+    const Main = {
+      List:function(a,b){
+        document.write('<p><a href="'+a+'" target="_blank" title="'+b+'"><strong>'+b+'</strong></a></p>');
+      },
+      Control:function(a,b){
+        document.write('<p><strong>'+a+'</strong>: '+b+'</p>');
+      },
+      Sponsor:function(a,b,c){
+          document.write('<p><strong>'+a+'</strong> : '+b+'</p><p><img src="'+c+'" width="50%"></p>');
+        }
     }
-    h2{
-      font-size: 35px;
-      text-align: center;
-      border-top:1px solid gray;
-      padding: 20px;
-      margin: 0;
-      color: red;
-    }
-    p{
-      text-align: center;
-    }
-    a {
-      color: black;
-    }
-    .grid{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-    .a{
-      border-right: 1px solid gray;
-    }
-    @media(max-width:800px){
-     .grid{
-        display: block;
-      }
-      .a{
-        border-right: none;
-      }
-    }
-  </style>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XZY49CQ715"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-XZY49CQ715');
-</script>
+  </script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1><a href="index.html" title="스턴트 GP(Stunt GP)" style="text-decoration:none;">스턴트 GP(Stunt GP)</a></h1><br>
+  <input type="button" value="Night" onclick="NightDayHandler(this);">
   <p><img src="stunt gp.jpeg" width="50%"></p><br>
   <h2>소개(Introduction)</h2>
   <p>스턴트 GP(Stunt GP)는 TEAM17이 2001년 10월 25일에 출시한 RC카 레이싱 게임이다. <strong>스턴트의, 스턴트에 의한, 스턴트를 위한 게임</strong>이라고 해도 될 정도로 스턴트에 대한 묘사가 뛰어나다. 2004년도에 '켈로그 콘푸로스트' 시리얼과 함께 '롤러코스터 레이싱' 이라는 이름의 증정품으로 판매된 바 있다.</p>
   <p><iframe width="530" height="315" src="https://www.youtube.com/embed/atx-giVeYFk" title="YouTube video player" class="center" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
   <div class="grid">
-    <div class="a">
+    <div>
     <h2>게임 모드(Game Mode)</h2>
-      <p><a href="1.html" target="_blank" title="아케이드(Arcade)"><strong>아케이드(Arcade)</strong></a></p>
-      <p><a href="1.html" target="_blank" title="친선 경기(Exhibition)"><strong>친선 경기(Exhibition)</strong></a></p>
-      <p><a href="1.html" target="_blank" title="타임 트라이얼(Time Trial)"><strong>타임 트라이얼(Time Trial)</strong></a></p>
-      <p><a href="1.html" target="_blank" title="스턴트 챌린지(Stunt Challenge)"><strong>스턴트 챌린지(Stunt Challenge)</strong></a></p>
-      <p><a href="1.html" target="_blank" title="챔피언십(Championship)"><strong>챔피언십(Championship)</strong></a></p>
+    <script>
+      Main.List('1.html','아케이드(Arcade)');
+      Main.List('1.html','친선 경기(Exhibition)');
+      Main.List('1.html','타임 트라이얼(Time Trial)');
+      Main.List('1.html','스턴트 챌린지(Stunt Challenge)');
+      Main.List('1.html','챔피언십(Championship)');
+    </script>
     </div>
     <div>
     <h2>차량(Cars)</h2>
     <p>스턴트 GP(Stunt GP)의 차량에는 <strong>스턴트(Stunt), 그립(Grip), 파워(Power)</strong>의 세 가지 능력치가 있다. <strong>스턴트(Stunt)</strong>는 <strong>공중에서의 화려한 기술</strong>을, <strong>그립(Grip)</strong>은 <strong>오프로드(Off Road)에서의 속도 유지력</strong>을, <strong>파워(Power)</strong>는 <strong>가속력 및 최대 속력</strong>을 의미한다. 각 능력치에 특화된 차량들이 네 부류로 나뉜다.</p>
-      <p><a href="2.html" target="_blank" title="Wild Wheels"><strong>Wild Wheels</strong></a></p>
-      <p><a href="2.html" target="_blank" title="Aero Blasters"><strong>Aero Blasters</strong></a></p>
-      <p><a href="2.html" target="_blank" title="Speed Demons"><strong>Speed Demons</strong></a></p>
-      <p><a href="2.html" target="_blank" title="Team Specials"><strong>Team Specials</strong></a></p>
+    <script>
+      Main.List('2.html','Wild Wheels');
+      Main.List('2.html','Aero Blasters');
+      Main.List('2.html','Speed Demons');
+      Main.List('2.html','Team Specials');
+    </script>
     </div>
-    <div class="a">
+    <div>
     <h2>트랙(Tracks)</h2>
     <p>스턴트 GP(Stunt GP)에는 <strong>7개국의 트랙</strong>이 등장하며 <strong>총 24개</strong>이다.</p>
-      <p><a href="5.html" target="_blank" title="영국(UK)"><strong>영국(UK)</strong></a></p>
-      <p><a href="5.html" target="_blank" title="프랑스(France)"><strong>프랑스(France)</strong></a></p>
-      <p><a href="5.html" target="_blank" title="이탈리아(Italy)"><strong>이탈리아(Italy)</strong></a></p>
-      <p><a href="5.html" target="_blank" title="독일(Germany)"><strong>독일(Germany)</strong></a></p>
-      <p><a href="5.html" target="_blank" title="스페인(Spain)"><strong>스페인(Spain)</strong></a></p>
-      <p><a href="5.html" target="_blank" title="일본(Japan)"><strong>일본(Japan)</strong></a></p>
-      <p><a href="5.html" target="_blank" title="미국(USA)"><strong>미국(USA)</strong></a></p>
+    <script>
+      Main.List('5.html','영국(UK)');
+      Main.List('5.html','프랑스(France)');
+      Main.List('5.html','이탈리아(Italy)');
+      Main.List('5.html','독일(Germany)');
+      Main.List('5.html','스페인(Spain)');
+      Main.List('5.html','일본(Japan)');
+      Main.List('5.html','미국(USA)');
+    </script>
     <p>트랙은 지정된 코스로만 운행할 수 있으며, 코스를 이탈할 경우 <strong>리스폰(Respawn)</strong>되어 원위치로 돌아온다.</p>
     </div>
     <div>
     <h2>조작(Control)</h2>
-      <p><strong>상, 하, 좌, 우</strong>: 기본적인 조작</p>
-      <p><strong>Control</strong>: 부스트</p>
-      <p><strong>Shift</strong>: 스턴트 및 드리프트</p>
-      <p><strong>Enter</strong>: 경적</p>
+    <script>
+      Main.Control('상, 하, 좌, 우','기본적인 조작');
+      Main.Control('Control','부스트');
+      Main.Control('Shift','스턴트 및 드리프트');
+      Main.Control('Enter','경적');
+    </script>
     </div>
   </div>
   <h2>후원사(Sponsor)</h2>
   <p>스턴트 GP(Stunt GP)에는 <strong>총 6개의 후원사(Sponsor)</strong>가 등장하는데, 각 사마다 제조하는 <a href="4.html" target="_blank" title="차량 부품(Vehicle Component)"><strong>차량 부품(Vehicle Component)</strong></a> 및 도색이 다르다.</p>
   <div class="grid">
     <div>
-      <p><strong>TGR</strong> : 차대(Chassis), 구동 장치(Drive System) 제조</p>
-      <p><img src="TGR.png" width="50%"></p>
-      <p><strong>R-Line</strong> : 타이어(Tyre) 제조</p>
-      <p><img src="RLN.png" width="50%"></p>
-      <p><strong>ITEX</strong> : 서스펜션(Suspension), 브레이크(Brake), 기어(Gear) 제조</p>
-      <p><img src="ITX.png" width="50%"></p>
+      <script>
+        Main.Sponsor('TGR','차대(Chassis), 구동 장치(Drive System) 제조','TGR.png');
+        Main.Sponsor('R-Line','타이어(Tyre) 제조','RLN.png');
+        Main.Sponsor('ITEX','서스펜션(Suspension), 브레이크(Brake), 기어(Gear) 제조','ITX.png');
+      </script>
     </div>
     <div>
-      <p><strong>CALTEX</strong> : 엔진&모터(Engine&Motor) 제조</p>
-      <p><img src="CAL.png" width="50%"></p>
-      <p><strong>TITAN</strong> : 배터리(Battery) 제조</p>
-      <p><img src="TTN.png" width="50%"></p>
-      <p><strong>Mysuko</strong> : 브레이크 제어 장치(Brake Management System, BMS), 부스트(Boost) 제조</p>
-      <p><img src="MSK.png" width="50%"></p>
+      <script>
+        Main.Sponsor('CALTEX','엔진&모터(Engine&Motor) 제조','CAL.png');
+        Main.Sponsor('TITAN','배터리(Battery) 제조','TTN.png');
+        Main.Sponsor('Mysuko','브레이크 제어 장치(Brake Management System, BMS), 부스트(Boost) 제조','MSK.png');
+      </script>
     </div>
   </div>
   <h2>스턴트(Stunt)</h2>
-  <p><strong>스턴트 GP(Stunt GP)의 필수 요소</strong>이다. 부스트를 계속 쓰면 배터리가 다 소모되고, 충전 시 시간이 지체된다. 스턴트를 하면 <strong>배터리 충전도 되고, 점수도 오르고, 별도 받는다.</strong> 스턴트로 얻은 별들은 일정 시간 동안 스턴트를 하지 않으면 사라지며, 획득한 별이 많을수록 별 지속 시간이 증가한다. 스턴트 도중 차량이 전복되거나 스턴트 마무리가 어설프면 획득한 별이 모두 사라진다. 스턴트 종류와 발동 방법이 궁금하다면 아래 링크를 클릭하기 바란다.</p><p class="a"><a href="3.html" target="_blank" title="스턴트 이름(점수): 스턴트 발동 방법">스턴트 이름(점수): 스턴트 발동 방법</a></p>
+  <p><strong>스턴트 GP(Stunt GP)의 필수 요소</strong>이다. 부스트를 계속 쓰면 배터리가 다 소모되고, 충전 시 시간이 지체된다. 스턴트를 하면 <strong>배터리 충전도 되고, 점수도 오르고, 별도 받는다.</strong> 스턴트로 얻은 별들은 일정 시간 동안 스턴트를 하지 않으면 사라지며, 획득한 별이 많을수록 별 지속 시간이 증가한다. 스턴트 도중 차량이 전복되거나 스턴트 마무리가 어설프면 획득한 별이 모두 사라진다. 스턴트 종류와 발동 방법이 궁금하다면 아래 링크를 클릭하기 바란다.</p>
+  <p><a href="3.html" target="_blank" title="스턴트 이름(점수): 스턴트 발동 방법">스턴트 이름(점수): 스턴트 발동 방법</a></p>
   <p><div id="lv-container" data-id="city" data-uid="MTAyMC81NTI3My8zMTc0MA==">
-	<script type="text/javascript">
-   (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
-
-       if (typeof LivereTower === 'function') { return; }
-
-       j = d.createElement(s);
-       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-       j.async = true;
-
-       e.parentNode.insertBefore(j, e);
-   })(document, 'script');
-	</script>
-<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
-</div></p>
+    <script type="text/javascript">
+     (function(d, s) {
+         var j, e = d.getElementsByTagName(s)[0];
+  
+         if (typeof LivereTower === 'function') { return; }
+  
+         j = d.createElement(s);
+         j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+         j.async = true;
+  
+         e.parentNode.insertBefore(j, e);
+     })(document, 'script');
+    </script>
+  <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+  </div></p>
 </body>
 </html>
